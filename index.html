@@ -1,0 +1,266 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Fashion Designer Portfolio
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+  <script>
+   document.addEventListener('DOMContentLoaded', function () {
+            const dropdownButton = document.getElementById('dropdownButton');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+
+            dropdownButton.addEventListener('click', function () {
+                dropdownMenu.classList.toggle('hidden');
+            });
+
+            document.addEventListener('click', function (event) {
+                if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.classList.add('hidden');
+                }
+            });
+        });
+  </script>
+ </head>
+ <body class="bg-gray-100 text-gray-900">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+   <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+    <a class="text-2xl font-bold text-gray-800" href="#">
+     Fashion Designer
+    </a>
+    <ul class="hidden md:flex space-x-4 items-center">
+     <li>
+      <a class="text-gray-600 hover:text-gray-800" href="#home">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-600 hover:text-gray-800" href="#about">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-600 hover:text-gray-800" href="#portfolio">
+       Portfolio
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-600 hover:text-gray-800" href="#contact">
+       Contact
+      </a>
+     </li>
+    </ul>
+    <div class="md:hidden relative">
+     <button class="text-gray-600 hover:text-gray-800 focus:outline-none" id="dropdownButton">
+      <i class="fas fa-bars">
+      </i>
+     </button>
+     <ul class="absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg hidden" id="dropdownMenu">
+      <li>
+       <a class="block px-4 py-2 text-gray-600 hover:bg-gray-100" href="#home">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="block px-4 py-2 text-gray-600 hover:bg-gray-100" href="#about">
+        About
+       </a>
+      </li>
+      <li>
+       <a class="block px-4 py-2 text-gray-600 hover:bg-gray-100" href="#portfolio">
+        Portfolio
+       </a>
+      </li>
+      <li>
+       <a class="block px-4 py-2 text-gray-600 hover:bg-gray-100" href="#contact">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-screen" id="home" style="background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L3Vwd2s2MTg0MzM0NC13aWtpbWVkaWEtaW1hZ2UtbGtocWw2YWIuanBn.jpg');">
+   <div class="container mx-auto h-full flex items-center justify-center">
+    <div class="text-center text-white">
+     <h1 class="text-5xl font-bold mb-4">
+      Welcome to My Fashion World
+     </h1>
+     <p class="text-xl mb-8">
+      Discover the latest trends and designs
+     </p>
+     <a class="bg-gray-800 text-white px-6 py-3 rounded-full" href="#portfolio">
+      View Portfolio
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- About Section -->
+  <section class="py-16 bg-white" id="about">
+   <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center">
+     <div class="md:w-1/2">
+      <img alt="Fashion designer working on a dress" class="rounded-lg shadow-lg" height="400" src="https://storage.googleapis.com/a1aa/image/qcFhEyFJ7hJJLZ8nvsORIVilgAeiu2VY9beLEeILdDmX0YlnA.jpg" width="600"/>
+     </div>
+     <div class="md:w-1/2 md:pl-12 mt-8 md:mt-0">
+      <h2 class="text-3xl font-bold mb-4">
+       About Me
+      </h2>
+      <p class="text-gray-700 mb-4">
+       I am a passionate fashion designer with over 10 years of experience in creating unique and stylish clothing. My designs are inspired by the latest trends and my love for art and culture.
+      </p>
+      <p class="text-gray-700">
+       I believe in creating fashion that not only looks good but also feels good. My goal is to make every client feel confident and beautiful in my designs.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Portfolio Section -->
+  <section class="py-16 bg-gray-100" id="portfolio">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">
+     Portfolio
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img alt="Elegant evening gown in a deep blue color" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/a2nVV13c0f3pV6e0mmFfky4J8Pw7NwsEuAmHCmt3NfccoxKPB.jpg" width="600"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold mb-2">
+        Evening Gown
+       </h3>
+       <p class="text-gray-700">
+        An elegant evening gown perfect for special occasions.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img alt="Casual summer dress with floral patterns" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/sO0VgfBe2eeykS7s39nGIzRgCEKGkEFNh8rebghFfDKuiGr8E.jpg" width="600"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold mb-2">
+        Summer Dress
+       </h3>
+       <p class="text-gray-700">
+        A casual summer dress with beautiful floral patterns.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img alt="Chic business suit in a modern cut" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/e9ovmAGqgOTha6kfe1vpGa2hfdUhoMUOeTlJDHBrIkZERjVeE.jpg" width="600"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold mb-2">
+        Business Suit
+       </h3>
+       <p class="text-gray-700">
+        A chic business suit with a modern cut for professional settings.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img alt="Bohemian style dress with intricate patterns" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/ByfBr8CTtCSf6Ute0eZebbsWYzhR3s1A97d9enx7yQYNjGr8E.jpg" width="600"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold mb-2">
+        Bohemian Dress
+       </h3>
+       <p class="text-gray-700">
+        A bohemian style dress with intricate patterns and a relaxed fit.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img alt="Classic little black dress" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/174f1cCt06UnNKLNz4gf88oU7ffa0Z6lc5Zkeqk7lOHkQjVeE.jpg" width="600"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold mb-2">
+        Little Black Dress
+       </h3>
+       <p class="text-gray-700">
+        A classic little black dress that is a must-have in every wardrobe.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img alt="Vintage inspired dress with lace details" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/dMhAZlUYDsJCDZdQgbVIJsQemsmQiK90sWNNTJds7pzCNW5JA.jpg" width="600"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold mb-2">
+        Vintage Dress
+       </h3>
+       <p class="text-gray-700">
+        A vintage inspired dress with beautiful lace details.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="py-16 bg-white" id="contact">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">
+     Contact Me
+    </h2>
+    <div class="max-w-lg mx-auto">
+     <form action="#" class="bg-gray-100 p-8 rounded-lg shadow-lg" method="POST">
+      <div class="mb-4">
+       <label class="block text-gray-700 font-bold mb-2" for="name">
+        Name
+       </label>
+       <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-600" id="name" name="name" required="" type="text"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700 font-bold mb-2" for="email">
+        Email
+       </label>
+       <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-600" id="email" name="email" required="" type="email"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700 font-bold mb-2" for="message">
+        Message
+       </label>
+       <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-600" id="message" name="message" required="" rows="4"></textarea>
+      </div>
+      <button class="w-full bg-gray-800 text-white px-4 py-2 rounded-lg" type="submit">
+       Send Message
+      </button>
+     </form>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4">
+   <div class="container mx-auto px-4 text-center">
+    <p>
+     © 2023 Fashion Designer. All rights reserved.
+    </p>
+    <div class="flex justify-center space-x-4 mt-2">
+     <a class="text-white hover:text-gray-400" href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>
